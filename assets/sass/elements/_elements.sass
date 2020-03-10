@@ -1,0 +1,242 @@
+/* ======================================
+ *
+ ELEMENTS
+ *
+ ========================================
+
+/* -------------------------------------------------------------
+ wpcf7
+ ------------------------------------------------------------- */
+.wpcf7
+	width: 100%
+	.line
+		float: left
+		display: inline-block
+		vertical-align: top
+		width: 100%
+		margin: 0 0 3px 0
+		padding: 0
+		.wpcf7-text,
+		.wpcf7-textarea
+			display: inline-block
+			width: 100%
+			margin: 0
+		.wpcf7-text
+			height: 35px
+		.wpcf7-textarea
+			max-width: 100%
+			min-width: 100%
+			min-height: 153px
+			height: 153px
+			max-height: 250px
+	.btn-submit 
+		float: right
+		position: relative
+		width: 50%
+		text-align: right
+	.ajax-loader 
+		position: absolute
+		left: 0
+	.email-form
+		width: 65%
+	.phone-form
+		width: 35%
+		padding-left: 3px
+
+	//P CONTACT
+	.p-contact
+		float: right
+		width: 50%
+		margin: 0 0 0 0
+		font-size: 1.4rem
+		line-height: 1.6rem
+		font-weight: 100
+		color: $dark-text
+		strong 
+			font-weight: 700
+
+	//ALERTS
+	.wpcf7-validation-errors,
+	div.wpcf7-mail-sent-ok,
+	div.wpcf7-mail-sent-ng
+		display: inline-block
+		vertical-align: top
+		width: 100%
+		margin: 15px 0
+		font-size: 1.3rem
+		line-height: 1.7rem
+		color: $text-color
+		border: none
+	.wpcf7-validation-errors
+		border-left: 3px solid #F7E700
+	div.wpcf7-mail-sent-ok
+		border-left: 3px solid #72bf44
+	div.wpcf7-mail-sent-ng
+		border-left: 3px solid red
+	span.wpcf7-not-valid-tip
+		display: inline-block
+		width: 100%
+		margin: 0
+		padding: 0 0 0 8px
+		font-size: 1rem
+		color: #F00
+	
+	
+/* ----------------------------------------
+ Breadcrumb
+ ---------------------------------------- */
+.bar-title
+	display: inline-block
+	vertical-align: top
+	width: 100%
+	height: 45px
+	border-bottom: 2px solid $main-color
+	h2
+		display: none
+		vertical-align: top
+		width: 100%
+		margin: 0
+		padding: 0
+		font-size: 25px
+		line-height: 1.4
+		font-weight: 400
+		font-family: $main-font
+		color: $main-color
+	.box-breadcrumb
+		//border-bottom: 2px solid #686666
+		display: inline-block
+		vertical-align: top
+		width: 100%
+		margin: 0
+		line-height: 45px
+		//padding-bottom: 8px
+		font-size: 12px
+		font-weight: 300
+		font-family: $main-font
+		li
+			display: inline-block
+			vertical-align: middle
+			color: #8e8e8e
+			//text-transform: uppercase
+			position: relative
+			padding-right: 20px
+			margin-right: 10px
+			&:after
+				content: '>'
+				background: url(https://assets.betalabs.net/production/nfit/images/stores/1/breadcrump.png)
+				text-indent: -99999px
+				position: absolute
+				top: 50%
+				transform: translateY(-50%)
+				right: 0
+				margin-top: -1px
+				font-family: $main-font
+				font-size: 0px
+				width: 5px
+				height: 9px
+				color: #080808
+			&:last-child
+				&:after
+					display: none
+			a
+				font-family: $main-font
+				font-size: 12px
+				font-weight: 400
+				//color: $accent-color
+				color: #8e8e8e
+			&.active
+				a
+					color: #8e8e8e
+			
+	@media screen and (max-width: 767px)
+		display: none
+
+
+
+/* -------------------------------------------------------------
+ Posts relacionados
+ ------------------------------------------------------------- */
+.yuzo_related_post
+	border-top: none
+	.yuzo_wraps
+		float: left
+		width: 100%
+
+	.yuzo_text
+		font-size: 14px !important
+	.yuzo_wraps
+		float: left
+		width: 100%
+	.yuzo_clearfixed
+		width: 100%
+		margin: 0 auto 30px auto
+		text-align: center
+		border-bottom: 1px solid #ebebeb
+		@media screen and (min-width: 768px)
+			width: 600px
+		h3
+			color: $dark-text
+			font-size: 24px
+			font-weight: 800
+			
+	.relatedthumb
+		clear: none
+		border-bottom: none
+		width: 50%
+		padding: 0px 15px 0px 0px !important
+		@media screen and (min-width: 1200px)
+			padding: 0px 45px 0px 0px !important
+	
+		@media screen and (max-width: 520px)
+			width: 100%
+			margin-bottom: 20px !important
+			
+
+		.yuzo-img-wrap
+			@media screen and (min-width: 1024px)
+				width: 220px !important
+				height: 170px !important
+
+			@media screen and (min-width: 1200px)
+				width: 290px !important
+				height: 230px !important
+		.yuzo-img
+			height: 100% !important
+			width: 100% !important
+		.yuzo__text--title
+			font-size: 16px !important
+			font-weight: 600
+			margin-bottom: 15px
+			color: $dark-text
+		.view-more
+			float: left
+			background: $main-color
+			color: $light-text
+			height: 40px
+			width: 190px
+			margin: 15px 0
+			text-align: center
+			a
+				color: inherit
+				font-weight: normal
+				line-height: 40px
+				text-transform: uppercase
+				font-size: 12px !important
+		
+		.entry-date
+			float: left
+			font-size: 14px
+			text-transform: capitalize
+			color: #959595
+			@media screen and (max-width: 1023px)
+				clear: both
+			a
+				color: #959595
+
+	.yuzo-list
+		.image-list
+			margin-right: 6px
+			@media screen and (max-width: 1023px)
+				width: 100%
+	.yuzo_text
+		display: block

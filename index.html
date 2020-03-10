@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Accordion</title>
+    <link rel="stylesheet" href="./assets/css/main.css">
+</head>
+<body>
+    <div class="container">
+        <section class="first-frame">
+            <header class="row boxs">
+                <h1>Accordion with Fetch JS</h1>
+                <p>Aqui segue um exemplo do Accordion, como base usei a conquista mais importante da historia do Corinthians, o campeonato Paulista de 1977.</p>
+            </header>
+        </section>
+    </div>
+
+    <section class="frame-accordion">
+        <div class="upper">
+			<span class="upper__list"></span>
+            <span class="upper__list"></span>
+            <span class="upper__list"></span>
+            <span class="upper__list"></span>
+            <span class="upper__list"></span>
+            <span class="upper__list"></span>
+            <span class="upper__list"></span>
+            <span class="upper__list"></span>
+            <span class="upper__list"></span>
+            <span class="upper__list"></span>
+            <span class="upper__list hide-mbl"></span>
+            <span class="upper__list hide-mbl"></span>
+            <span class="upper__list hide-mbl"></span>
+            <span class="upper__list hide-mbl"></span>
+            <span class="upper__list hide-mbl"></span>
+            <span class="upper__list hide-mbl"></span>
+            <span class="upper__list hide-mbl"></span>
+            <span class="upper__list hide-mbl"></span>
+            <span class="upper__list hide-mbl"></span>
+            <span class="upper__list hide-mbl"></span>
+		</div>
+
+        <div class="container">
+            <h2>FAQs de 1977: o que você precisa saber sobre a final histórica entre Timão e Ponte:</h2>
+
+            <p>O Accordion abaixo faz ao ser clicado ele faz requisicao com Fetch e retorna o json do atributo href.</p>
+            <ul class="accordion"></ul>
+
+        </div>
+        <div class="image-final"></div>
+
+        <div class="container">
+            <p>Corinthians, força inacreditável, inigualável, avassaladora: 1977 foi uma vitória espetacular e muito disso se deve à torcida.</p>
+            <p>Este campeonato daria um livro e não me atrevo a querer falar de tudo em um artigo. Muito deste campeonato já foi esmiuçado nos mínimos detalhes, gols, jogos, o que os jogadores pensavam, superstições e muito mais. Acho que é dado muito destaque a Basílio e pouca gente viu como foi sofrido chegar lá. Por isso, aqui falo um pouco do elenco e da campanha.</p>
+
+            <iframe width="100%" height="550" src="https://www.youtube.com/embed/mwyTr32HvoA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div class="image-elenco"></div>
+
+        <div class="container">
+            <h3>Um accordion simples</h3>
+
+            <ul class="simple-accordion">
+                <li class="simple-accordion__list">
+                    <a href="#" rel="nofollow" class="simple-accordion__link">O campeonato</a>
+                    <div class="simple-accordion__body">
+                        <div class="simple-accordion__content">
+                            <p>A Federação Paulista queria ganhar muito dinheiro em 1977. Para isso preparou uma fórmula esdrúxula, com 19 times se enfrentando em três turnos.</p>
+                            <p>Os times foram divididos em três grupos de cinco e um de quatro. Ao fim do primeiro e segundo turnos, os campeões de cada turno se enfrentavam em semifinal e final. Os vencedores de cada turno mais os seis melhores colocados iam para o terceiro turno. Goleadas davam três pontos.</p>
+                            <p>Vale lembrar que nesta época o legal mesmo era o campeonato regional, com o Brasileiro em segundo plano.</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="simple-accordion__list">
+                    <a href="#" rel="nofollow" class="simple-accordion__link">A campanha</a>
+                    <div class="simple-accordion__body">
+                        <div class="simple-accordion__content">
+                            <p>O Corinthians começou cambaleante o campeonato. Depois de uma derrota doída contra o Guarani, o técnico Duque foi demitido e veio Oswaldo Brandão; apesar de melhora imediata, quem levou o turno foi o Botafogo do craque Sócrates.</p>
+                            <p>No segundo turno, venceu 13 de 18 partidas e empolgava. Os jogos terminavam no domingo e já se formavam filas na FPF para compra o ingresso para as próximas partidas. As vitórias na semifinal e final de turno contra SPFC e o rivale Palmeiras só aumentou a confiança.</p>
+                            <p>O terceiro turno foi mais um de fortes emoções. Agora que já sabemos o final, tudo bem, mas dê uma olhada nos resultados, some com muitos anos sem títulos e pense como você ficaria rico vendendo Rivotril nesta época. Antes das finais, o Corinthians tinha jogado três vezes com a Ponte Preta e perdeu as três...</p>
+
+                            <ul>
+                                <li><strong>Primeiro turno</strong></li>
+                                <li>09/02 Corinthians 2 x 0 Portuguesa Santista</li>
+                                <li>13/02 Ponte Preta 4 x 0 Corinthians</li>
+                                <li>16/02 Corinthians 3 x 0 Comercial</li>
+                                <li>19/02 Paulista 0 x 2 Corinthians</li>
+                                <li>24/02 Ferroviária 0 x 0 Corinthians</li>
+                                <li>27/02 Marília 0 x 2 Corinthians</li>
+                                <li>02/03 Corinthians 0 x 1 Juventus</li>
+                                <li>06/03 Botafogo 2 x 2 Corinthians</li>
+                                <li>10/03 Corinthians 2 x 0 Portuguesa</li>
+                                <li>13/03 Noroeste 1 x 0 Corinthians</li>
+                                <li>20/03 Santos 1 x 1 Corinthians</li>
+                                <li>23/03 São Bento 0 x 0 Corinthians</li>
+                                <li>27/03 Corinthians 0 x 3 Guarani</li>
+                                <li>17/04 Corinthians 1 x 0 São Paulo</li>
+                                <li>20/04 Corinthians 3 x 1 XV de Piracicaba</li>
+                                <li>27/04 Corinthians 3 x 0 América</li>
+                                <li>08/05 Palmeiras 0 x 0 Corinthians</li>
+                                <li>11/05 Corinthians 4 x 0 XV de Jaú</li>
+                            </ul>
+                            <ul>
+                                <li><strong>Segundo turno:</strong></li>
+                                <li>22/05 Corinthians 2 x 0 São Bento</li>
+                                <li>25/05 Corinthians 5 x 1 Noroeste</li>
+                                <li>29/05 Corinthians 4 x 0 Santos</li>
+                                <li>05/06 XV de Jaú 3 x 0 Corinthians</li>
+                                <li>09/06 Corinthians 2 x 0 Botafogo</li>
+                                <li>12/06 Guarani 2 x 1 Corinthians</li>
+                                <li>19/06 Portuguesa Santista 0 x 1 Corinthians</li>
+                                <li>26/06 Comercial 0 x 1 Corinthians</li>
+                                <li>02/07 Corinthians 4 x 0 Paulista</li>
+                                <li>10/07 Portuguesa 1 x 0 Corinthians</li>
+                                <li>17/07 Corinthians 1 x 0 Juventus</li>
+                                <li>24/07 Palmeiras 4 x 2 Corinthians</li>
+                                <li>27/07 Corinthians 1 x 0 Marília</li>
+                                <li>31/07 América 1 x 2 Corinthians</li>
+                                <li>10/08 XV de Piracicaba 2 x 3 Corinthians</li>
+                                <li>13/08 Corinthians 3 x 1 Ferroviária</li>
+                                <li>21/08 Corinthians 1 x 0 São Paulo</li>
+                                <li>25/08 Corinthians 1 x 2 Ponte Preta</li>
+                                <li><strong>Semifinal do segundo turno:</strong></li>
+                                <li>28/08 Corinthians 2 x 1 São Paulo</li>
+                                <li><strong>Final do segundo turno:</strong></li>
+                                <li>31/08 Palmeiras 0 x 1 Corinthians</li>
+                            </ul>
+
+                            <ul>
+                                <li><strong>Terceiro turno</strong></li>
+                                <li>04/09 Santos 2 x 2 Corinthians</li>
+                                <li>11/09 Corinthians 0 x 1 Ponte Preta</li>
+                                <li>18/09 Corinthians 2 x 0 Palmeiras</li>
+                                <li>21/09 Corinthians 0 x 1 Guarani</li>
+                                <li>25/09 Botafogo 0 x 1 Corinthians</li>
+                                <li>29/09 Corinthians 1 x 0 Portuguesa</li>
+                                <li>02/10 Corinthians 2 x 1 São Paulo</li>
+                            </ul>
+                            <ul>
+                                <li><strong>Finais</strong></li>
+                                <li>05/10 Corinthians 1 x 0 Ponte Preta</li>
+                                <li>09/10 Corinthians 1 x 2 Ponte Preta</li>
+                                <li>13/10 Corinthians 1 x 0 Ponte Preta</li>
+                            </ul>
+
+                        </div>
+                    </div>
+                </li>
+                <li class="simple-accordion__list">
+                    <a href="#" rel="nofollow" class="simple-accordion__link">Basílio não ganhou sozinho</a>
+                    <div class="simple-accordion__body">
+                        <div class="simple-accordion__content">
+                            <p>O time era um 4-3-3 durante o campeonato com <strong>Tobias </strong>(Jairo); <strong>Z&eacute; Maria</strong>, <strong>Mois&eacute;s</strong> (Darci), <strong>Z&eacute; Eduardo</strong> (Ademir) e <strong>Wladimir</strong> (Cl&aacute;udio Mineiro); <strong>Russo </strong>(Givanildo), <strong>Bas&iacute;lio </strong>(Luciano) e <strong>Palhinha </strong>(Ad&atilde;ozinho); <strong>Vaguinho</strong>, <strong> Gerald&atilde;o</strong>(Lance) e <strong>Romeu </strong>(Edu).     T&eacute;cnico: Duque, depois <strong>Oswaldo Brand&atilde;o</strong>.</p>
+                            <p>Nas finais, o time migrou para um 4-4-2 com Palhinha mais &agrave; frente: <strong>Tobias </strong>(Jairo); <strong>Z&eacute; Maria</strong>, <strong>Mois&eacute;s</strong>, <strong>Z&eacute; Eduardo</strong> e <strong>Wladimir</strong>; <strong>Russo</strong>, <strong>Bas&iacute;lio, </strong><strong>Luciano</strong> e <strong>Palhinha; </strong><strong>Gerald&atilde;o</strong> e <strong>Romeu. </strong>Com a aus&ecirc;ncia de Palhinha na final, voltou ao 4-3-3 no &uacute;ltimo jogo.</p>
+                            <p>At&eacute; vencer este campeonato, o Corinthians vivia trocando times inteiros a cada temporada e seus jogadores iam ser campe&otilde;es em outros lugares. O vice-campeonato no Brasileiro de 1976 deu lastro para o time ser mantido e ajudou no sucesso.</p>
+                            <p>Os goleiros eram <strong>Tobias</strong>, <strong>Jairo</strong> e <strong>Solito</strong>. N&atilde;o se pode dizer que Tobias e Jairo eram dois frangueiros, mas tamb&eacute;m n&atilde;o eram milagreiros. O goleiro da base Solito nem entrou.</p>
+                            <p>Na lateral direita, o monstro <strong>Z&eacute; Maria</strong>.<strong> </strong>O Super-Z&eacute; era extraordin&aacute;rio em car&aacute;ter e abnega&ccedil;&atilde;o; para coroar tudo isso tinha boa t&eacute;cnica.</p>
+                            <p>Na zaga central, <strong>Mois&eacute;s</strong> batia at&eacute; na sombra, mas dava conta do recado. Seu reserva era <strong>Darci</strong>, da base. O quarto zagueiro era <strong>Z&eacute; Eduardo</strong>, tamb&eacute;m da base. O reserva <strong>Ademir</strong> pouco jogou.</p>
+                            <p>O fant&aacute;stico <strong>Wladimir </strong>veio da base em 74 e tomou conta da lateral esquerda do Corinthians. Recordista de jogos do clube e um dos melhores em sua posi&ccedil;&atilde;o na hist&oacute;ria. <strong>Cl&aacute;udio Mineiro</strong> era o reserva.</p>
+                            <p>O volante <strong>Russo </strong>podia n&atilde;o ser um primor de jogador, mas era o titular sem contesta&ccedil;&atilde;o. <strong>Givanildo</strong> veio com fama mas ficou pouco tempo no clube.</p>
+                            <p><strong>Bas&iacute;lio</strong> veio com a ingrata miss&atilde;o de substituir Rivellino em 1975. Muito querido, seu maravilhoso gol na final garante seu lugar no cora&ccedil;&atilde;o de todos os corinthianos. <strong>Luciano</strong> podia ser mais ativo e atento, mas ocupava o seu lugar no meio campo ao lado de Bas&iacute;lio. O cria da base <strong>Ad&atilde;ozinho</strong> era reserva, assim como <strong>Lance</strong>, que apesar de centroavante entrava mais atr&aacute;s &agrave;s vezes.</p>
+                            <p>Se voc&ecirc; ver algum clipe de melhores momentos voc&ecirc; pode achar que <strong>Vaguinho</strong> era um craque, mas o ponta direita enlouquecia a torcida com cruzamentos para o vazio e chutes na lua. O reserva <strong>Rubens Nicola</strong> nunca o amea&ccedil;ou.</p>
+                            <p>O craque do time era <strong>Palhinha</strong>, que era meia de origem mas t&atilde;o craque que jogava quase um atacante, e dos bons. Chegou no meio de campeonato e 60 mil foram v&ecirc;-lo... e o Corinthians perdeu, como era sua sina em grandes estreias de jogador. Ficou na hist&oacute;ria, ainda mais depois de fazer grande dupla com o Doutor.</p>
+                            <p><strong>Gerald&atilde;o </strong>fazia gols a rodo e perdia aos borbot&otilde;es. </p>
+                            <p>Na ponta esquerda, o acima da m&eacute;dia mas n&atilde;o craque <strong>Romeu Cambalhota</strong> fazia as vezes, com o rotundo <strong>Edu</strong> como reserva.</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="simple-accordion__list">
+                    <a href="#" rel="nofollow" class="simple-accordion__link">Artilharia</a>
+                    <div class="simple-accordion__body">
+                        <div class="simple-accordion__content">
+                            <p>Gerald&atilde;o foi o artilheiro com 23 gols marcados, seguido por Palhinha com 9; Romeu e Vaguinho fizeram 8 gols cada um. Luciano fez 7 gols, Bas&iacute;lio marcou seis vezes e Russo 3. Edu fez dois gols; Ad&atilde;ozinho, Darci, Lance, Wladimir e Z&eacute; Maria fizeram um gol cada.</p>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="ft-bottom">
+            <span class="ft-bottom__list"></span>
+            <span class="ft-bottom__list"></span>
+            <span class="ft-bottom__list"></span>
+            <span class="ft-bottom__list"></span>
+            <span class="ft-bottom__list"></span>
+            <span class="ft-bottom__list"></span>
+            <span class="ft-bottom__list"></span>
+            <span class="ft-bottom__list"></span>
+            <span class="ft-bottom__list"></span>
+            <span class="ft-bottom__list"></span>
+            <span class="ft-bottom__list hide-mbl"></span>
+            <span class="ft-bottom__list hide-mbl"></span>
+            <span class="ft-bottom__list hide-mbl"></span>
+            <span class="ft-bottom__list hide-mbl"></span>
+            <span class="ft-bottom__list hide-mbl"></span>
+            <span class="ft-bottom__list hide-mbl"></span>
+            <span class="ft-bottom__list hide-mbl"></span>
+            <span class="ft-bottom__list hide-mbl"></span>
+            <span class="ft-bottom__list hide-mbl"></span>
+            <span class="ft-bottom__list hide-mbl"></span>
+        </div>
+    </footer>
+
+    <script type="text/javascript" src="./assets/js/accordion.min.js"></script>
+    <!--<script type="text/javascript" src="./assets/dev_js/accordion.js"></script>-->
+
+</body>
+</html>

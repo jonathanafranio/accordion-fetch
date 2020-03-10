@@ -1,0 +1,690 @@
+/* ======================================
+ *
+ CONTENT SITE
+ *
+ ========================================
+
+#content
+	display: inline-block
+	vertical-align: top
+	width: 100%
+	margin: 0
+	//padding: 121px 0 0 0
+
+body.blog,
+body.page-template-page_blog,
+body.single,
+body.search,
+body.page:not(.home),
+body.archive
+	#content
+		margin-top: 45px
+
+/* -------------------------------------------------------------
+ Content area
+ ------------------------------------------------------------- */
+.content-area
+	position: relative
+	z-index: 5
+
+/* -------------------------------------------------------------
+ Full content
+ ------------------------------------------------------------- */
+.full-content
+	width: 100%
+	margin: 0
+	padding: 0
+
+/* ------------------------------------------------------------
+ 
+ Hentry
+
+ ------------------------------------------------------------ */
+.hentry
+	width: 100%
+
+/* ------------------------------------------------------------
+ Entry header
+ ------------------------------------------------------------ */
+.entry-header
+	width: 100%
+	.entry-title
+		//margin: 45px 0 0 0
+		font-weight: 700
+		//text-align: center
+		font-size: 24px
+		text-transform: uppercase
+		color: $dark-text
+		padding-top: 32px
+		//background: url(../images/bg-title.png) center top no-repeat
+	
+.page
+	.entry-header
+		.entry-title
+			//margin-top: 60px
+
+/* ------------------------------------------------------------
+ Entry content
+ ------------------------------------------------------------ */
+.entry-content
+	width: 100%
+	p
+		margin: 0
+		padding: 5px 0 15px 0
+		font-size: 14px
+		padding: 5px 0 15px 0
+		color: #000
+	img
+		&.alignleft
+			display: block
+			margin: 5px 20px 10px 0
+			float: left
+		&.alignright
+			display: block
+			margin: 5px 0px 10px 20px
+			float: right
+		&.aligncenter
+			display: block
+			margin: 0 auto
+		&.alignnone
+			display: inline
+			float: none
+	
+	h2, h3, h4, h5, h6
+		color: #959595
+		font-size: 14px
+		font-weight: normal
+		//padding-bottom: 0
+	
+.single
+	.entry-content
+		.yuzo_related_post
+			display: none
+
+/* ------------------------------------------------------------
+ Drop cap
+ ------------------------------------------------------------ */
+div.shortcode-dropcap
+	float: left
+	width: 32px
+	height: 32px
+	margin: 2px 7px 0 2px
+	font-size: 2.5rem
+	line-height: 30px
+	text-align: center
+
+div.shortcode-dropcap.circle
+	font-size: 18px
+	margin-right: 10px
+	-moz-border-radius: 16px
+	-webkit-border-radius: 16px
+	border-radius: 16px
+
+/* ------------------------------------------------------------
+ Column shortcode
+ ------------------------------------------------------------ */
+.column
+	display: inline-block
+	vertical-align: top
+	margin: 5px 0 15px
+	padding: 0 15px
+
+.column.first
+	padding-left: 0
+
+.column.last
+	padding-right: 0
+
+.column.mx-12
+	padding-left: 0
+	padding-right: 0
+
+/* ------------------------------------------------------------
+ Comments area
+ ------------------------------------------------------------ */
+.comments-area
+	display: inline-block
+	width: 100%
+	margin: 50px 0 0 0
+	padding: 0
+	border-top: 1px solid $bg-secundary
+
+/* ------------------------------------------------------------
+ Comment respond
+ ------------------------------------------------------------ */
+.comment-respond
+	width: 100%
+	max-width: $max-size
+	margin: 50px 0 0 0
+	padding: 0
+	h3
+		width: 100%
+		margin: 0
+		padding: 0
+	.comment-form
+		display: inline-block
+		width: 100%
+		max-width: 500px
+	p
+		display: inline-block
+		width: 100%
+		margin: 15px 0 0 0
+		label
+			display: inline-block
+			width: 100%
+			font-size: 1.4rem
+			font-weight: 700
+		input[type="text"],
+		input[type="email"],
+		input[type="url"],
+		textarea
+			width: 100%
+		textarea
+			height: 160px
+			min-height: 160px
+			max-height: 260px
+	.form-submit
+		text-align: right
+	.comment-notes
+		font-size: 1.2rem
+		#email-notes
+			display: inline-block
+			width: 100%
+		.required
+			color: #F00
+	.form-allowed-tags
+		max-width: 500px
+	.form-allowed-tags,
+	code
+		font-size: 1rem
+
+/* ------------------------------------------------------------
+ Content commented
+ ------------------------------------------------------------ */
+.content-commented
+	display: inline-block
+	width: 100%
+	margin: 0
+	padding: 0
+	background: $bg-secundary
+	.comment
+		width: 100%
+		margin: 0
+		padding: 25px 0
+		.comment-reply-link
+			font-size: 1.2rem
+			font-style: italic
+		.comment-metadata
+			a
+				font-size: 1rem
+
+/* ------------------------------------------------------------
+
+ Page blog
+
+ ------------------------------------------------------------ */
+body.blog,
+body.page-template-page_blog,
+body.single,
+body.archive,
+body.search,
+body.error404
+	.wrap-content-col
+		float: left
+		width: 100%
+		@media screen and (min-width: 768px)
+			//width: 72.6495727%
+			width: 72%
+		//@media screen and (min-width: 1200px)
+			width: calc(100% - 320px)
+
+	.content-col
+		float: left
+		width: 100%
+		background: #fff
+		//max-width: 68.55%
+		//margin: 15px 0 0 0
+		margin: 0 0 30px 0
+		//padding: 0 40px 0 0
+		padding: 33px 20px 20px 20px
+		@media screen and (min-width: 768px)
+			padding: 0px
+		//@media screen and (min-width: 768px)
+			width: calc(100% - 320px)
+	
+	.hentry
+		padding: 0 0 45px 0
+		border-bottom: 1px solid $bg-secundary
+		.entry-header 
+			.entry-title
+				padding-top: 0
+				padding-bottom: 5px
+				background: none
+				text-align: left
+				font-size: 18px
+				color: $dark-text
+				a
+					color: inherit
+
+			.entry-meta
+				width: 100%
+				margin: 0
+				padding: 0
+				font-size: 1.3rem
+				//color: $light-text
+		.entry-footer
+			width: 100%
+			margin: 0
+			padding: 0
+			.comments-link,
+			.tags-links
+				display: inline-block
+				vertical-align: top
+				width: 100%
+				margin: 0
+				padding: 0
+			.comments-link
+				margin-top: 5px
+				a
+					font-style: italic
+			.tags-links
+				margin-top: 10px
+				font-size: 1.2rem
+	.page-header
+		display: inline-block
+		vertical-align: top
+		width: 100%
+		margin: 0
+		.page-title
+			font-size: 23.57px
+			line-height: 64px
+		
+	
+	.category-title
+		font-size: 23.57px
+		text-transform: uppercase
+		//font-weight: normal
+		line-height: 64px
+		a
+			color: inherit
+			&:hover
+				color: inherit
+
+	#main
+		padding-bottom: 30px
+
+body.archive,
+body.single
+	.hentry
+		padding-bottom: 0px
+		border-bottom: none
+
+body.search
+	.page-header
+		.page-title
+			color: $dark-text
+	
+body.single-equipe
+	.category-title
+		a
+			//color: #5ba0d4
+	.hentry
+		.entry-header
+			//border-bottom: 1px solid #5ba0d4
+			.entry-title
+				color: #5ba0d4
+	.graduate
+		span
+			font-weight: 500
+			color: #5ba0d4
+	.mail-teaw
+		//text-align: center
+		color: #4a96d0
+		font-size: 16px
+		font-weight: 500
+		margin: 10px 0 5px
+/* ------------------------------------------------------------
+ Widget area
+ ------------------------------------------------------------ */
+.widget-area
+	float: right
+	//width: 30%
+	width: 100%
+	background: #ebebeb
+	padding: 20px
+	//margin: 50px 0 0 0
+	margin: 0
+	@media screen and (min-width: 768px)
+		width: 27.3504273%
+	//@media screen and (min-width: 1200px)
+		width: 320px
+	
+	.widget
+		display: inline-block
+		vertical-align: top
+		width: 100%
+		background: inherit
+		//margin: 0 0 30px 0
+		margin: 0
+		//padding: 10px
+		font-size: 1.3rem
+		&.widget_recent_entries,
+		&.recent-posts-extended
+			background: none
+			border: none
+			box-shadow: none
+			padding-left: 0px
+			padding-right: 0px
+		.widget-title
+			width: 100%
+			margin: 0 0 10px 0
+			font-family: $main-font
+			color: $dark-text
+			font-weight: 600
+			padding: 0 2px 3px 2px
+			//font-size: 1.6rem
+			font-size: 16px
+			text-transform: uppercase
+			border-bottom: 3px solid $bg-secundary
+			.nav-plus
+				width: 12px
+				height: 18px
+				display: inline-block
+				text-indent: -9999999px
+				background: url(../images/nav-sidebar.png) center no-repeat
+				margin-left: 10px
+			&.active
+				.nav-plus
+					transform: rotate(180deg)
+
+		.dropdown-content
+			display: block
+			//display: none
+			margin: 0 0 30px 0
+			//&.active
+				display: block
+		ul
+			display: inline-block
+			width: 100%
+			margin: 0
+			list-style-type: none !important
+			padding: 0 15px
+			li
+				width: 100%
+				margin: 0
+				padding: 0
+				list-style: none
+				font-size: 1.3rem
+				a
+					display: inline-block
+					vertical-align: top
+					width: 100%
+					margin: 0
+					padding: 3px 0
+					color: $text-color
+		
+					&:hover
+						color: $main-color
+				ul
+					padding: 0 0 0 15px
+		.rpwe-block
+			li
+				border-bottom: none
+				margin-bottom: 24px
+
+	//Widget recent comments
+	.widget_recent_comments
+		ul
+			li
+				margin: 2px 0 0 0
+				padding: 6px 10px 6px 0px
+				background: $bg-secundary url(../images/arrow_comments.png) no-repeat 10px 10px
+				a
+					padding: 0
+					color: $main-color
+					&:hover
+						color: $text-color
+
+	//Widget search
+	.widget_search
+		input
+			width: 100%
+			max-width: 500px
+			box-sizing: border-box
+
+	//Widget calendar
+	.widget_calendar
+		font-size: 1.3rem
+
+	//Widget calendar
+	.widget_tag_cloud
+		.tagcloud
+			width: 100%
+			margin: 0
+			a
+				display: inline-block
+				vertical-align: top
+				width: auto
+				margin: 0 5px 5px 0
+				padding: 5px 10px
+				color: #FFF
+				border-radius: 5px
+				background: $main-color
+				&:hover
+					color: #FFF
+					background: $light-main
+
+.rpwe-thumb
+	margin: 0px 15px 0px 0px !important
+
+.rpwe-block
+	h3
+		font-family: arial
+		font-weight: 800
+		font-size: 14px
+		a
+			font-family: arial
+			font-weight: 800
+			color: #a17735 !important
+			font-size: 14px!important
+		
+/* ------------------------------------------------------------
+ Navigation
+ ------------------------------------------------------------ */
+.navigation
+	display: inline-block
+	width: 100%
+	margin: 25px 0 0 0
+	padding: 0
+	.nav-previous,
+	.nav-next
+		display: inline-block
+		vertical-align: top
+		width: auto
+		margin: 0
+		a
+			display: inline-block
+			vertical-align: top
+			width: auto
+			margin: 0
+			padding: 8px 10px
+			font-size: 1.4rem
+			color: $dark-text
+			border-radius: 5px
+			&:hover
+				opacity: 0.7
+	.nav-previous
+		a
+			padding-left: 30px
+			background: $bg-secundary url(../images/arrow_nav_prev.png) no-repeat 10px 10px
+	.nav-next
+		float: right
+		a
+			padding-right: 30px
+			background: $bg-secundary url(../images/arrow_nav_next.png) no-repeat right 10px top 10px
+	a,
+	.current
+		display: inline-block
+		width: 47px
+		height: 44px
+		line-height: 44px
+		text-align: center
+		font-family: verdana
+		font-size: 20px
+		overflow: hidden
+	a
+		border: 1px solid #c2c3c5
+		color: #9f7635
+		background: #fff
+		-webkit-box-shadow: 0px -5px 3px 0px rgba(0,0,0,0.2)
+		-moz-box-shadow: 0px -5px 3px 0px rgba(0,0,0,0.2);
+		box-shadow: 0px -5px 3px 0px rgba(0,0,0,0.2)
+	.current
+		color: #000
+		background: #9c7333
+	.next
+		background: #fff url(../images/next-paginator.png) center center no-repeat
+		text-indent: -999px
+	.prev
+		background: #fff url(../images/prev-paginator.png) center center no-repeat
+		text-indent: -999px
+
+/* ------------------------------------------------------------
+ Search page
+ ------------------------------------------------------------ */
+.error404,
+.search
+	.no-results,
+	.not-found
+		.search-field
+			width: auto
+		.search-submit
+			color: #fff
+			background: #374a87
+			border-color: #374a87
+		.screen-reader-text
+			position: relative !important
+			width: auto
+			height: auto
+	
+/* ----------------------------------------
+ Media screen
+ ---------------------------------------- */
+@media screen and (max-width: 930px)
+	//Content
+	#content
+		//padding-top: 166px
+
+@media screen and (max-width: 869px)
+
+	//Blog
+	//body.blog,
+	//body.single,
+	//body.archive
+	//	.content-col
+			max-width: 60%
+	//	.widget-area
+			width: 40%
+	body.blog,
+	body.single,
+	body.archive,
+	body.search,
+	body.error404
+		.wrap-content-col
+			max-width: 59%
+		.widget-area
+			width: 40%
+	
+
+@media screen and (max-width: 767px)
+	//Content
+	#content
+		padding-top: 0
+
+	//Columns
+	.column
+		padding-left: 0
+		padding-right: 0
+
+	//Blog
+	body.blog,
+	body.single,
+	body.search,
+	body.archive
+		.content-col
+			float: none
+			max-width: 100%
+		.widget-area
+			float: none
+			width: 100%
+	
+	body.blog,
+	body.single,
+	body.archive,
+	body.search,
+	body.error404
+		.wrap-content-col
+			max-width: 100%
+	
+	
+/* ----------------------------------------
+ Produtos
+ ---------------------------------------- */
+.product
+	width: 100%
+	display: block
+	margin-bottom: 40px
+	float: left
+	.box-image
+		display: inline-block
+		width: 175px
+		float: left
+		margin-top: 20px
+	
+	.box-description
+		display: inline-block
+		width: calc(100% - 220px)
+		float: right
+	@media screen and (max-width: 600px)
+		.box-image, .box-description
+			width: 100%
+		.box-image
+			text-align: center
+			img
+				display: block
+				margin: auto
+		
+/* ----------------------------------------
+ Imagem destacada
+ ---------------------------------------- */
+body.blog,
+body.single,
+body.search,
+body.page,
+body.archive
+	.wrap-thumb
+		text-align: center
+		width: 100%
+		@media screen and (min-width: 600px)
+			float: left
+			width: 30%
+		@media screen and (min-width: 768px)
+			width: 37.6470588%
+		@media screen and (min-width: 1200px)
+			width: 320px
+	
+	/* ----------------------------------------
+	 Conteudo post, pagina (texto)
+	 ---------------------------------------- */
+	.entry-content
+		&.text-with-thumb
+			@media screen and (min-width: 600px)
+				width: 70%
+				padding-left: 15px
+			@media screen and (min-width: 768px)
+				width: 62.3529412%
+				padding: 0px 15px
+			@media screen and (min-width: 1200px)
+				width: calc(100% - 320px)
+				padding: 0px 40px
+

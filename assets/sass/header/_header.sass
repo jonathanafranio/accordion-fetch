@@ -1,0 +1,42 @@
+/* ======================================
+ *
+ HEADER
+ *
+ ========================================
+.no-scroll
+	overflow: hidden
+
+/* -------------------------------------------------------------
+ Site header
+ ------------------------------------------------------------- */
+.site-header
+	display: block
+	z-index: 1000
+	position: relative
+	background: $bg-header
+	@media screen and (min-width: 1024px)
+		.container
+			display: flex
+			justify-content: space-between
+			align-items: center
+			&:before, &:after
+				display: none
+
+.upper
+	display: flex
+	justify-content: space-around
+	height: 30px
+	color: $light-text
+	font-size: 22px
+	text-align: center
+	font-weight: normal
+	text-transform: uppercase
+	background: $main-color
+	&__list
+		width: 5px
+		height: 100%
+		background: $light-text
+		background: linear-gradient(to bottom, rgba($light-text,1) 0%, rgba($light-textn,0.6) 60%, rgba($light-text,0) 100%)
+		&.hide-mbl
+			@media screen and (max-width: 767px)
+				display: none

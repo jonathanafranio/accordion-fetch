@@ -1,0 +1,164 @@
+body
+    background: $bg-body url(../images/basilio.jpg)
+    background-attachment: fixed
+    background-size: cover
+    //background-position: center
+    background-position: right center
+    background-repeat: no-repeat
+
+.first-frame
+    display: flex
+    flex-wrap: wrap
+    justify-content: center
+    min-height: 100vh
+    align-items: center
+    @media screen and (max-width: 767px)
+        width: 100%
+    @media screen and (min-width: 768px)
+        width: 50%
+    //background: $light-main
+
+.frame-accordion
+    display: block
+    width: 100%
+    color: $light-text
+    //background-color: $main-color
+    background-color: $bg-header
+    box-shadow: 0px -10px 5px 0px rgba($bg-header,.75)
+
+.boxs
+    display: block
+    padding: 15px
+    background: rgba($bg-header, 0.7)
+    border-radius: 15px
+
+.upper
+    display: flex
+    justify-content: space-around
+    height: 30px
+    margin-bottom: 30px
+    color: $light-text
+    font-size: 22px
+    text-align: center
+    font-weight: normal
+    text-transform: uppercase
+    background: $bg-header
+    background: linear-gradient(to bottom, rgba($bg-header,1) 0%, rgba($bg-header,1) 60%, rgba($bg-header,0) 100%)
+    &__list
+        width: 5px
+        height: 100%
+        background: $light-text
+        background: linear-gradient(to bottom, rgba($light-text,1) 0%, rgba($light-text,1) 60%, rgba($light-text,0) 100%)
+        &.hide-mbl
+            @media screen and (max-width: 767px)
+                display: none
+
+.accordion,
+.simple-accordion
+    display: block
+    margin: 30px 0
+    padding: 0px
+    list-style-type: none
+
+    &__link
+        padding: 20px 50px 20px 0
+        display: block
+        position: relative
+        font-weight: 700
+        color: $light-main
+        &:after
+            content: ''
+            display: block
+            width: 10px
+            height: 10px
+            margin-top: -5px
+            position: absolute
+            right: 10px
+            top: 50%
+            text-align: center
+            color: $light-main
+            background: url(../images/close.svg) center center no-repeat
+            background-size: auto 10px
+            transform: rotate(45deg)
+            transition: transform 1s ease-in-out
+
+        &:before
+            content: ''
+            display: none
+            width: 25px
+            height: 25px
+            margin-top: -12.5px
+            position: absolute
+            right: 30px
+            top: 50%
+            text-align: center
+            color: $light-main
+            background: url(../images/loading.svg) center center no-repeat
+            background-size: auto 25px
+
+    &__body
+        display: block
+        height: 0px
+        overflow: hidden
+        will-change: transform
+        transition: height 1s ease-in-out
+
+    &__content
+        display: block
+        padding: 15px 0px
+
+    &__list
+        display: block
+        border-bottom: 1px solid $light-text
+        font-size: 1.6rem
+        &.-is-loading
+            .accordion__link
+                &:before
+                    display: block
+
+        &.-is-active
+            .accordion__link,
+            .simple-accordion__link
+                &:after
+                    transform: rotate(0deg)
+            //.accordion__body
+
+.image-final
+    background: url(../images/escalacao-final.jpg) center no-repeat
+
+.image-elenco
+    background: url(../images/elenco.jpg) top no-repeat
+.image-final,
+.image-elenco
+    display: block
+    width: 100%
+    height: 100vh
+    margin: 35px 0
+    position: relative
+    background-size: cover
+    background-attachment: fixed
+    overflow: hidden
+    box-shadow: inset 0px 30px 50px 25px rgba($bg-header,.75)
+    &:after,
+    &:before
+        content: ''
+        height: 0px
+        width: 100%
+        position: absolute
+        left: 0
+
+    &:before
+        top: 0
+        box-shadow: 0 0 20px 25px rgba($bg-header,.95)
+
+    &:after
+        bottom: 0
+        box-shadow: 0 0 20px 25px rgba($bg-header,.95)
+
+
+
+
+.svg-hidden
+    display: none
+    width: 300px
+    margin: 0 auto
