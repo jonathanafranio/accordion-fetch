@@ -44,8 +44,7 @@ function accordionWithFetch(){
                 fetch(this.getAttribute('href'))
                 .then(post => post.json())
                 .then(response => {
-                    console.log(response.txt);
-
+                    //console.log(response.txt);
                     textDescription = document.createElement('div');
                     textDescription.classList.add('accordion__content');
                     textDescription.append(response.txt);
